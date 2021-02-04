@@ -1,0 +1,43 @@
+.containerKnowMore {
+    width: 100%;
+    max-width: 1280px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.konwMoreContent {
+    margin-right: 80px;
+    font-size: 24px;
+    font-style: italic;
+}
+.knowMoreLink {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: italic;
+    width: 333px;
+    height: 58px;
+    text-align: center;
+    background-color: #00B6EF;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerKnowMore {
+        font-size: 16px;
+        flex-direction: column;
+    }
+    .konwMoreContent {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
