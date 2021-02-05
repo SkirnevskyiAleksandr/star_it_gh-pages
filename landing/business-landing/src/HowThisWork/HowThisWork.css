@@ -42,6 +42,13 @@
     top: -50px;
     left: 70px;
 }
+.howThisWorkText {
+    font-size: 28px;
+    font-style: italic;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #000000;
+}
 
 @media only screen and (max-width: 1200px) {
     .howThisWorkTop, .howThisWorkBottom {
