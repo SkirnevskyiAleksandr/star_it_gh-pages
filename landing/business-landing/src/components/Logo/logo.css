@@ -1,0 +1,37 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+}
+
+.logo__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+}
+
+.logo__img img{
+    animation-name: show;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.logo__text{
+    color: var(--color-title);
+}
+
+@keyframes show {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
