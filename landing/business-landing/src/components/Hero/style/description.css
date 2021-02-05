@@ -1,0 +1,44 @@
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    text-align: center;
+}
+
+.description__title{
+    margin: 0;
+
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+    color: var(--color-title);
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .description__title{
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px){
+    .description__title{
+        font-size: 3em;
+        flex-grow: 2;
+    }
+}
+
+.description__mark{
+    color: var(--secondary-color);
+}
+
+.description__text{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .description__text{
+        text-align: left;
+    }
+}

@@ -1,0 +1,22 @@
+.visual{
+
+}
+
+@media (min-width: 768px){
+    .visual{
+        position: absolute;
+        top: -50px;
+        right: -600px;
+        z-index: -1;
+
+        width: 938px;
+        height: 865px;
+        background: url("../img/visual.svg") 0 0 no-repeat;
+    }
+}
+
+@media (min-width: 1200px){
+    .visual{
+        right: -650px;
+    }
+}
