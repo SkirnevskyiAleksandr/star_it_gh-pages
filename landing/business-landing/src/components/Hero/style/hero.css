@@ -1,6 +1,6 @@
+.hero{
+    position: relative;
 
-
-.hero__wrap{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: 768px){
-    .hero__wrap{
+    .hero{
         flex-direction: row;
 
         padding: 0 20px;
