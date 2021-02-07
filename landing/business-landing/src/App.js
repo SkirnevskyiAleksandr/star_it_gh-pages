@@ -2,6 +2,11 @@ import React from 'react';
 import './App.css';
 import HowThisWork from './HowThisWork/HowThisWork';
 import KnowMore from './KnowMore/KnowMore';
+import eval_logo from './images/eval_logo.svg';
+import like_logo from './images/like_logo.svg';
+import upg_logo from './images/upg_logo.svg';
+import shop_logo from './images/shop_logo.svg';
+import smile_logo from './images/smile_logo.svg';
 
 
 
@@ -10,23 +15,23 @@ function App() {
   const howWork = [
     {
       title: "Клиент оценивает сервис",
-      urlImg: require("./images/eval_logo.svg") 
+      logo: eval_logo 
     },
     {
       title: "Вы узнаете, что клиенту нравится, и где есть недоработки",
-      urlImg: require("./images/like_logo.svg")
+      logo: like_logo
     },
     {
       title: "Вы корректируете улучшаете сервис",
-      urlImg: require("./images/upg_logo.svg")
+      logo: upg_logo
     },
     {
       title: "$$$",
-      urlImg: require("./images/shop_logo.svg")
+      logo: shop_logo
     },
     {
       title: "Количество довольных клиентов растет",
-      urlImg: require("./images/smile_logo.svg")
+      logo: smile_logo
     }
   ]
 
