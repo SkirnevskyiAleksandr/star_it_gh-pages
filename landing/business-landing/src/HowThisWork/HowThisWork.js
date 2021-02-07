@@ -1,5 +1,6 @@
 import React from 'react';
 import './HowThisWork.css';
+import ItemHowThisWork from './ItemHowThis Work';
 import eval_logo from '../images/eval_logo.svg';
 import upg_logo from "../images/upg_logo.svg";
 import shop_logo from "../images/shop_logo.svg";
