@@ -1,20 +1,21 @@
 import React from 'react';
 import './HowThisWork.css';
-import ItemHowThisWork from './ItemHowThis Work';
+import ItemHowThisWork from './ItemHowThis Work';git 
 import eval_logo from '../images/eval_logo.svg';
 import upg_logo from "../images/upg_logo.svg";
 import shop_logo from "../images/shop_logo.svg";
 import like_logo from "../images/like_logo.svg";
 import smile_logo from "../images/smile_logo.svg";
 
-const HowThisWork = () => {
+
+
   return (
-    <div className="containerHowThisWork">
+    <section className="containerHowThisWork">
         <h2 className="howThisWorkTitle">
             Как это работает
         </h2>
         <div className="howThisWorkTop">
-            <div className="howThisWorkItems">
+           <div className="howThisWorkItems">
                 <img src={eval_logo} className="howThisWorkImg" alt="Icon" />
                 <div className="howThisWorkContent">
                     <p className="howThisWorkText">
@@ -56,8 +57,8 @@ const HowThisWork = () => {
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> 
+    </section>
   );
 }
 
