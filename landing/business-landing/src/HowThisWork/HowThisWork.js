@@ -1,7 +1,9 @@
 import React from 'react';
 import './HowThisWork.css';
-import star_logo from '../images/star_logo.svg';
+import eval_logo from '../images/eval_logo.svg';
 import upg_logo from "../images/upg_logo.svg";
+import shop_logo from "../images/shop_logo.svg";
+import like_logo from "../images/like_logo.svg";
 import smile_logo from "../images/smile_logo.svg";
 
 const HowThisWork = () => {
@@ -12,7 +14,7 @@ const HowThisWork = () => {
         </h2>
         <div className="howThisWorkTop">
             <div className="howThisWorkItems">
-                <img src={star_logo} className="howThisWorkImg" alt="Icon" />
+                <img src={eval_logo} className="howThisWorkImg" alt="Icon" />
                 <div className="howThisWorkContent">
                     <p className="howThisWorkText">
                     Клиент оценивает сервис
@@ -20,7 +22,7 @@ const HowThisWork = () => {
                 </div>
             </div>
             <div className="howThisWorkItems">
-                <img src={upg_logo} className="howThisWorkImg" alt="Icon" />
+                <img src={like_logo} className="howThisWorkImg" alt="Icon" />
                 <div className="howThisWorkContent">
                     <p className="howThisWorkText">
                     Вы узнаете, что клиенту нравится, и где есть недоработки
@@ -38,7 +40,7 @@ const HowThisWork = () => {
         </div>
         <div className="howThisWorkBottom">
         <div className="howThisWorkItems">
-                <img src={star_logo} className="howThisWorkImg" alt="Icon" />
+                <img src={shop_logo} className="howThisWorkImg" alt="Icon" />
                 <div className="howThisWorkContent">
                     <p className="howThisWorkText">
                         $$$
