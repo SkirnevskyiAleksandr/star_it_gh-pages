@@ -7,11 +7,9 @@ const KnowMore = () => {
         <p className="konwMoreContent">
             Хотите узнать больше? 
         </p>
-        <div className="knowMoreLink">
-            <a href="#" className="knowMoreHelp">
+        <a href="#" className="knowMoreLink">
                 Получите консультацию
             </a>
-        </div>
     </div>
   );
 }
