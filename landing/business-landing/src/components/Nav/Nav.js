@@ -5,16 +5,16 @@ import "./nav.css"
 
 const Nav = (props) => {
 
-    const navItem = props.date.map((item, i) =>
+    const navItem = props.data.map((item, i) =>
         <NavItem
-            key = {i}
-            link = {item.link}
-            text = {item.text}
+            key={i}
+            link={item.link}
+            text={item.text}
         />);
 
     return (
         <nav className="nav">
-            <ul className={props.open ? "nav__list open"  : "nav__list"} >{navItem}</ul>
+            <ul className="nav__list">{navItem}</ul>
         </nav>
     );
 };

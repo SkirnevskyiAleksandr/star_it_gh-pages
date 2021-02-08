@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
 import ButtonMenu from "../ButtonMenu/ButtonMenu";
@@ -7,16 +7,19 @@ import "./Header.css"
 
 import logo from "./img/logo.png";
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isToggleOn: false
-        };
-        this.handleClick = this.handleClick.bind(this);
-    };
+const useScreenWidth = () => {
+    const [width, setSize] = useState([window.innerWidth]);
 
-    navItemDate = [
+    useEffect(() => {
+        const handleResize = () => setSize([window.innerWidth]);
+
+        window.addEventListener('resize', handleResize);
+    }, []);
+    return width;
+};
+
+const Header = () => {
+    const navItemData = [
         {
             text: "Как это работает",
             link: "#",
@@ -26,37 +29,42 @@ class Header extends Component {
             link: "#",
         }];
 
-    handleClick() {
-        this.setState(state => ({
-            isToggleOn: !state.isToggleOn
-        }));
-    }
+    const maxWidth = 768;
+    const width = useScreenWidth();
+    let [isMenuOpen, setMenuStatus] = useState(false);
 
-    render() {
-        return (
-            <header className="header">
-                <div className="row">
-                    <div className="header__wrap">
-                        <Logo
-                            img = {logo}
-                            text = "StarIt"
-                            title = "logotype"
-                            width = "100"
-                            height = "100"
-                        />
-                        <ButtonMenu
-                            open = {this.state.isToggleOn}
-                            handle = {this.handleClick}
-                        />
-                        <Nav
-                            open={this.state.isToggleOn}
-                            date = {this.navItemDate}
-                        />
-                    </div>
-                </div>
-            </header>
-        );
-    }
-}
+    const handleOpenMenu = (isMenuOpen) => {
+        setMenuStatus(!isMenuOpen);
+    };
+
+    const nav =
+        <Nav
+            data={navItemData}
+            isMenuOpen={handleOpenMenu}
+        />;
+
+    const btnMenu =
+        <ButtonMenu
+            statusBtn = {isMenuOpen}
+            isMenuOpen={handleOpenMenu}
+            onClick={setMenuStatus}
+        />;
+
+    return (
+        <header className="header row">
+            <div className="header__wrap">
+                <Logo
+                    img={logo}
+                    text="StarIt"
+                    title="logotype"
+                    width="100"
+                    height="100"
+                />
+                {width < maxWidth ? btnMenu : null}
+                {width > maxWidth ? nav : isMenuOpen ? nav : null}
+            </div>
+        </header>
+    );
+};
 
 export default Header;

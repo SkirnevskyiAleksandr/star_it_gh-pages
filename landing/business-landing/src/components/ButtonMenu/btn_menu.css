@@ -22,9 +22,3 @@
     box-shadow: 0 0 12px;
     cursor: pointer;
 }
-
-@media (min-width: 768px){
-    .btn_menu{
-        display: none;
-    }
-}

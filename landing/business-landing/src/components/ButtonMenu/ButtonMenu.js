@@ -5,9 +5,9 @@ import "./hamburger.css"
 
 const ButtonMenu = (props) => {
     return (
-        <button className="btn btn_menu" onClick={props.handle}>
+        <button className="btn btn_menu" onClick={() => props.onClick(props.isMenuOpen)}>
             Menu
-            <div className={props.open ? "hamburger close" : "hamburger"}>
+            <div className={props.statusBtn ? "hamburger hamburger_close" : "hamburger"}>
                 <span/>
                 <span/>
                 <span/>

@@ -40,37 +40,37 @@
     left: 0;
 }
 
-.close.hamburger span:after{
+.hamburger_close span:after{
     right: -4px;
 }
 
-.close.hamburger span:before{
+.hamburger_close span:before{
     left: -4px;
 }
 
-.close.hamburger span:first-of-type:after{
+.hamburger_close span:first-of-type:after{
     transform-origin: left top;
     transform: rotate(45deg);
 }
 
-.close.hamburger span:first-of-type:before{
+.hamburger_close span:first-of-type:before{
     transform-origin: right top;
     transform: rotate(-45deg);
 }
 
-.close.hamburger span:last-of-type:before{
+.hamburger_close span:last-of-type:before{
     transform-origin: right bottom;
     transform: rotate(45deg);
 }
 
-.close.hamburger span:last-of-type:after{
+.hamburger_close span:last-of-type:after{
     transform-origin: left bottom;
     transform: rotate(-45deg);
 }
 
-.close.hamburger span:nth-of-type(2):after{
+.hamburger_close span:nth-of-type(2):after{
     width: 0;
 }
-.close.hamburger span:nth-of-type(2):before{
+.hamburger_close span:nth-of-type(2):before{
     width: 0;
 }
