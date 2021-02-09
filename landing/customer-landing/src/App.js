@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Download from './components/Download/download';
+import HowItWorks from './components/HowItWorks/HowItWorks'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className = " page">
       <section className = "wrapper">
         <Download/>
+        <HowItWorks/>
       </section>  
     </div>
     
