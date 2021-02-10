@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import HowThisWork from './HowThisWork/HowThisWork';
-import KnowMore from './KnowMore/KnowMore';
-import eval_logo from './images/eval_logo.svg';
-import like_logo from './images/like_logo.svg';
-import upg_logo from './images/upg_logo.svg';
-import shop_logo from './images/shop_logo.svg';
-import smile_logo from './images/smile_logo.svg';
+import HowThisWork from './components/HowThisWork/HowThisWork';
+import KnowMore from './components/KnowMore/KnowMore';
+import eval_logo from './components/images/eval_logo.svg';
+import like_logo from './components/images/like_logo.svg';
+import upg_logo from './components/images/upg_logo.svg';
+import shop_logo from './components/images/shop_logo.svg';
+import smile_logo from './components/images/smile_logo.svg';
 
 
 

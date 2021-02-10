@@ -1,13 +1,13 @@
 import React from 'react';
-import './KnowMore.css';
+import styles from './KnowMore.module.css';
 
 const KnowMore = () => {
   return (
-    <div className="containerKnowMore">
-        <p className="konwMoreContent">
+    <div className={styles.containerKnowMore}>
+        <p className={styles.konwMoreContent}>
             Хотите узнать больше? 
         </p>
-        <a href="#" className="knowMoreLink">
+        <a href="#" className={styles.knowMoreLink}>
                 Получите консультацию
             </a>
     </div>

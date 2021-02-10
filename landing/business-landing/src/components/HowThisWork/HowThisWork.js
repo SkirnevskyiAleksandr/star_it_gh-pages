@@ -1,6 +1,6 @@
 import React from 'react';
-import './HowThisWork.css';
-import ItemHowThisWork from './ItemHowThis Work'; 
+import styles from './HowThisWork.module.css';
+import ItemHowThisWork from './ItemHowThisWork'; 
 
 
 const HowThisWork = ({item}) => {
@@ -10,11 +10,11 @@ const HowThisWork = ({item}) => {
     key={i} />);
 
   return (
-    <section className="containerHowThisWork">
-        <h2 className="howThisWorkTitle">
+    <section className={styles.containerHowThisWork}>
+        <h2 className={styles.howThisWorkTitle}>
             Как это работает
         </h2>
-        <div className="howThisWorkCard">
+        <div className={styles.howThisWorkCard}>
 
             {itemsCard}
 
