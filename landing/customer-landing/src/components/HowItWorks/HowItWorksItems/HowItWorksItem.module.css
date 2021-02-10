@@ -10,4 +10,5 @@
     background-color: #fff;
     border-radius: 7px;
     color: rgb(108,118,127);
+    word-wrap:break-word;
 }    

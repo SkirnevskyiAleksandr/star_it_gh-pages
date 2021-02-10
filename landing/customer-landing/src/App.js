@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import s from './App.module.css';
 import Download from './components/Download/download';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Footer from './components/Footer/footer';
@@ -7,8 +7,8 @@ import Footer from './components/Footer/footer';
 
 function App() {
   return (
-    <div className = " page">
-      <section className = "wrapper">
+    <div className = {s.page}>
+      <section className ={s.wrapper}>
         <Download/>
         <HowItWorks/>
         <Footer/>

@@ -1,11 +1,11 @@
 import React from 'react';
-import "./download.css";
+import s from './download.module.css';
 
 const Download = () => {
     return (
-        <div className = "download">
-          <h4 className = "button-download__title-2"> Начни менять жизнь к лучшему</h4>
-          <button className = "download__button" >Скачай приложение</button>
+        <div className = {s.download}>
+          <h4 className = {s.buttonDownload__title2}> Начни менять жизнь к лучшему</h4>
+          <button className = {s.download__button} >Скачай приложение</button>
         </div>
     );
 };
