@@ -1,0 +1,15 @@
+.footerContacts{
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
+.footerContacts__address{
+    display: flex;
+    flex-direction: column;
+}
+.footerContacts__item{
+    color: inherit;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 2.5em
+}
