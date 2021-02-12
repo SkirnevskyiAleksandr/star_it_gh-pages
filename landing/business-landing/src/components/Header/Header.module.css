@@ -1,8 +1,8 @@
-.header{
+.container{
     position: relative;
 }
 
-.header__wrap{
+.wrap{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

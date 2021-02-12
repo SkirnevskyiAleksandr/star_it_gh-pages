@@ -3,7 +3,7 @@ import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
 import ButtonMenu from "../ButtonMenu/ButtonMenu";
 
-import "./Header.css"
+import header from "./Header.module.css"
 
 import logo from "./img/logo.png";
 
@@ -51,8 +51,8 @@ const Header = () => {
         />;
 
     return (
-        <header className="header row">
-            <div className="header__wrap">
+        <header className={`${header.container} row`}>
+            <div className={header.wrap}>
                 <Logo
                     img={logo}
                     text="StarIt"

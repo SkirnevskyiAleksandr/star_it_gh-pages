@@ -1,7 +1,7 @@
 import React from 'react';
 import DownloadItem from "./DownloadItem";
 
-import "./download.css";
+import download from "./Download.module.css";
 
 import google from "./img/google.svg";
 import ios from "./img/ios.svg";
@@ -31,7 +31,7 @@ const Download = () => {
         />);
 
     return (
-        <div className="download">
+        <div className={download.container}>
             {items}
         </div>
     );
