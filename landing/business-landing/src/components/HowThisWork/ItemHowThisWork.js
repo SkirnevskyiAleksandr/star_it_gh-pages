@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./HowThisWork.module.css";
+import Zoom from 'react-reveal/Zoom';
 
 
 const ItemHowThisWork = ({items}) => {
     return (
+        <Zoom>
     <div className={styles.howThisWorkItems}>
         <img src={items.logo} className={styles.howThisWorkImg} alt="Icon" />
         <div className={styles.howThisWorkContent}>
@@ -12,6 +14,7 @@ const ItemHowThisWork = ({items}) => {
             </p>
         </div>
     </div>
+    </Zoom>
     );
 }
 

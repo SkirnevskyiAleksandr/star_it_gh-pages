@@ -23,7 +23,7 @@
 .howThisWorkItems {
     width: 360px;
     height: 200px;
-    background: #C4C4C4;
+    background: #dcf5e2;
     opacity: 0.6;
     border-radius: 27px;
     margin-right: 43px;
@@ -54,5 +54,11 @@
 @media only screen and (max-width: 1200px) {
     .howThisWorkItems {
         margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .howThisWorkItems {
+        margin-right: 0;
     }
 }
