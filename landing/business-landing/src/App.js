@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './App.module.css';
-import Download from './components/Download/download';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 import HowItCosts from './components/HowItCosts/HowItCosts';
 import Footer from './components/Footer/footer';
 import './App.css';
