@@ -1,4 +1,4 @@
-.hamburger{
+.box{
     position: relative;
 
     width: 20px;
@@ -11,14 +11,14 @@
     align-items: center;
 }
 
-.hamburger span{
+.box span{
     position: relative;
     display: block;
     background: transparent;
 }
 
-.hamburger span:after,
-.hamburger span:before{
+.box span:after,
+.box span:before{
     position: absolute;
 
     content: "";
@@ -32,45 +32,45 @@
     transition: 0.5s;
 }
 
-.hamburger span:after{
+.box span:after{
     right: 0;
 }
 
-.hamburger span:before{
+.box span:before{
     left: 0;
 }
 
-.hamburger_close span:after{
+.close span:after{
     right: -4px;
 }
 
-.hamburger_close span:before{
+.close span:before{
     left: -4px;
 }
 
-.hamburger_close span:first-of-type:after{
+.close span:first-of-type:after{
     transform-origin: left top;
     transform: rotate(45deg);
 }
 
-.hamburger_close span:first-of-type:before{
+.close span:first-of-type:before{
     transform-origin: right top;
     transform: rotate(-45deg);
 }
 
-.hamburger_close span:last-of-type:before{
+.close span:last-of-type:before{
     transform-origin: right bottom;
     transform: rotate(45deg);
 }
 
-.hamburger_close span:last-of-type:after{
+.close span:last-of-type:after{
     transform-origin: left bottom;
     transform: rotate(-45deg);
 }
 
-.hamburger_close span:nth-of-type(2):after{
+.close span:nth-of-type(2):after{
     width: 0;
 }
-.hamburger_close span:nth-of-type(2):before{
+.close span:nth-of-type(2):before{
     width: 0;
 }

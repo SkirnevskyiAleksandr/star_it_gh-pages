@@ -1,4 +1,4 @@
-.btn_menu{
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,11 +14,12 @@
     transition: 0.5s;
 }
 
-.btn_menu:focus{
+.menu:focus{
     outline: none;
 }
 
-.btn_menu:hover{
+.menu:hover{
     box-shadow: 0 0 12px;
     cursor: pointer;
 }
+

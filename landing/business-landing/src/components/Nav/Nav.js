@@ -1,7 +1,7 @@
 import React from 'react';
 import NavItem from "./NavItem";
 
-import "./nav.css"
+import nav from "./Nav.module.css"
 
 const Nav = (props) => {
 
@@ -13,8 +13,8 @@ const Nav = (props) => {
         />);
 
     return (
-        <nav className="nav">
-            <ul className="nav__list">{navItem}</ul>
+        <nav className={nav.container}>
+            <ul className={nav.list}>{navItem}</ul>
         </nav>
     );
 };

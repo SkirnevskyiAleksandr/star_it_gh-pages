@@ -1,4 +1,4 @@
-.hero{
+.container{
     position: relative;
 
     display: flex;
@@ -9,18 +9,18 @@
 }
 
 @media (min-width: 768px){
-    .hero{
+    .container{
         flex-direction: row;
 
         padding: 0 20px;
     }
 }
 
-.hero__item:first-child{
+.item:first-child{
     width: 40%;
 }
 
-.hero__item:last-child{
+.item:last-child{
     width: 100%;
 
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: 768px){
-    .hero__item:last-child{
+    .item:last-child{
         width: 60%;
 
         padding: 20px 50px;
@@ -40,17 +40,17 @@
 }
 
 @media (min-width: 1200px){
-    .hero__item:last-child{
+    .item:last-child{
         padding-right: 100px;
     }
 }
 
-.hero__img{
+.img{
     display: none;
 }
 
 @media (min-width: 768px){
-    .hero__img{
+    .img{
         display: block;
         width: 400px;
         margin: 0 auto;

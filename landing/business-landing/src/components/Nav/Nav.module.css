@@ -1,4 +1,4 @@
-.nav {
+.container {
     width: 100%;
     height: auto;
 
@@ -10,12 +10,12 @@
 }
 
 @media (min-width: 768px) {
-    .nav {
+    .container {
         width: auto;
     }
 }
 
-.nav__list {
+.list {
     position: absolute;
     left: 0;
     right: 0;
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 768px) {
-    .nav__list {
+    .list {
         position: static;
 
         display: flex;
@@ -51,12 +51,12 @@
     }
 }
 
-.nav__item {
+.item {
     padding: 3px 18px;
 
 }
 
-.nav__link {
+.link {
     position: relative;
 
     display: block;
@@ -65,7 +65,7 @@
     text-decoration: none;
 }
 
-.nav__link::after {
+.link::after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -78,11 +78,11 @@
     transform: translateY(10px);
 }
 
-.nav__link:hover {
+.link:hover {
     color: var(--secondary-color);
 }
 
-.nav__link:hover:after {
+.link:hover:after {
     opacity: 1;
     transform: translateY(0);
 }
