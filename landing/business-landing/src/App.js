@@ -9,7 +9,8 @@ function App() {
   return (
     <div className = {s.page}>
       <section className ={s.wrapper}>
-        <Download/>
+        <Header/>
+        <Hero/>
         <HowItCosts/>
         <Footer/>
       </section>  
