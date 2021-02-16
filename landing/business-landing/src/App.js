@@ -1,14 +1,20 @@
 import React from 'react';
+import s from './App.module.css';
+import Download from './components/Download/download';
+import HowItCosts from './components/HowItCosts/HowItCosts';
+import Footer from './components/Footer/footer';
 
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <div className="App">
-        <Header/>
-        <Hero/>
+    <div className = {s.page}>
+      <section className ={s.wrapper}>
+        <Download/>
+        <HowItCosts/>
+        <Footer/>
+      </section>  
     </div>
+    
   );
 }
 

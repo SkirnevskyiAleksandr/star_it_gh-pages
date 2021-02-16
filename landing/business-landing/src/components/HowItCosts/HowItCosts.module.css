@@ -1,0 +1,15 @@
+.HowItCosts__header{
+    margin:20px 10px;
+    text-align: center;
+    font-size: 2.375rem;
+    font-weight: 300;
+}
+.HowItCosts {
+   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius:10px;
+}
+
+
