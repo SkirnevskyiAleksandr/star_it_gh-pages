@@ -6,15 +6,15 @@ import Zoom from 'react-reveal/Zoom';
 const ItemHowThisWork = ({items}) => {
     return (
         <Zoom>
-    <div className={styles.howThisWorkItems}>
-        <img src={items.logo} className={styles.howThisWorkImg} alt="Icon" />
-        <div className={styles.howThisWorkContent}>
-            <p className={styles.howThisWorkText}>
-                {items.title}
-            </p>
-        </div>
-    </div>
-    </Zoom>
+            <div className={styles.howThisWorkItems}>
+                <img src={items.logo} className={styles.howThisWorkImg} alt="Icon" />
+                <div className={styles.howThisWorkContent}>
+                    <p className={styles.howThisWorkText}>
+                        {items.title}
+                    </p>
+                </div>
+            </div>
+        </Zoom>
     );
 }
 

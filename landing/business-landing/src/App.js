@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './App.module.css';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import HowItCosts from './components/HowItCosts/HowItCosts';
@@ -41,16 +40,14 @@ function App() {
   ]
 
   return (
-    <div className = {s.page}>
-      <section className ={s.wrapper}>
-        <Header/>
-        <Hero/>
-        <KnowMore />
-        <HowThisWork item={howWork} />
-        <KnowMore />
-        <HowItCosts/>
-        <Footer/>
-      </section>  
+    <div>
+      <Header/>
+      <Hero/>
+      <KnowMore />
+      <HowThisWork item={howWork} />
+      <KnowMore />
+      <HowItCosts/>
+      <Footer/>
     </div>
     
   );
