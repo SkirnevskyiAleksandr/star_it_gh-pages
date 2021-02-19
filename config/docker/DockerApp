@@ -1,0 +1,6 @@
+FROM php:7.4.4-fpm
+RUN apt-get update
+RUN apt-get install unzip
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN curl https://getcomposer.org/download/2.0.4/composer.phar --output /usr/local/bin/composer
+RUN chmod 755 /usr/local/bin/composer
