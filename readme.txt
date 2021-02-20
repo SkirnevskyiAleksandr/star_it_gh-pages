@@ -8,9 +8,11 @@
 5. Wait for installation is over
 
 Now environment is on.
-Server is available on localhost:8181
-Client is available on localhost:8080
+API server is available on localhost:8181
+Client server is available on localhost:8080
 Customer application is available on localhost:3000
 Business application is available on localhost:3001
 Customer landing is available on localhost:3002
 Business landing is available on localhost:3003
+
+For now applications are not initialized, so their respective blocks in docker-compose.yml are commented to avoid error messages
