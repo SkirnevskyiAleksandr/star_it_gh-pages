@@ -10,7 +10,7 @@ const WhereItWorkItem = ({items}) => {
                 {items.title}
             </p>
         </div>
-    </div
+    </div>
     );
 }
 
