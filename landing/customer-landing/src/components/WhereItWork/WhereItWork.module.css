@@ -33,10 +33,9 @@
     align-items: center;
     position: relative;
     margin-bottom: 100px;
+    box-shadow: 5px 5px 10px #07b584;
 }
-.items:last-child {
-    margin-right: 0;
-}
+
 .img {
     position: absolute;
     width: 100px;
@@ -50,6 +49,7 @@
     padding-left: 35px;
     padding-right: 35px;
     color: #000000;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
