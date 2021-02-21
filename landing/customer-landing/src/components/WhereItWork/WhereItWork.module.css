@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: center;
 }
-.howThisWorkItems {
+.items {
     width: 360px;
     height: 200px;
     background: #dcf5e2;
@@ -33,17 +33,17 @@
     position: relative;
     margin-bottom: 100px;
 }
-.howThisWorkItems:last-child {
+.items:last-child {
     margin-right: 0;
 }
-.howThisWorkImg {
+.img {
     position: absolute;
     width: 100px;
     height: 100px;
     top: -50px;
     left: 70px;
 }
-.howThisWorkText {
+.text {
     font-size: 28px;
     font-style: italic;
     padding-left: 35px;
@@ -52,13 +52,13 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .howThisWorkItems {
+    .items {
         margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .howThisWorkItems {
+    .items {
         margin-right: 0;
     }
 }
