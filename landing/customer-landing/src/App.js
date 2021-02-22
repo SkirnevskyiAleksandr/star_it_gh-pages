@@ -8,7 +8,7 @@ import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <div className = {s.page}>
+    <div>
       <section className ={s.wrapper}>
         <Header/>
         <Hero/>
