@@ -1,12 +1,12 @@
 import React from 'react';
-import s from './HowItCostsItem.module.css';
-import picture from './icon.png';
+import HowItCostsItemModule from './HowItCostsItem.module.css';
+// import picture from './HowItCostsItems/icon.png';
 
 const HowItCostsItem1 = () =>{
     return(
-        <section className={s.HowItCosts__item}>
-            <div className = {s.card__top}>
-                <div className = {s.iconWrapper}>
+        <section className={HowItCostsItemModule.HowItCosts__item}>
+            <div className = {HowItCostsItemModule.card__top}>
+                <div className = {HowItCostsItemModule.iconWrapper}>
                     jljlkj
                 </div>
                <div> Star-It Premium</div> 

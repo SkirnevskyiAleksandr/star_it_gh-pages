@@ -1,21 +1,21 @@
 import React from 'react';
-import s from './footerLeft.module.css';
+import footerLeftModule from './footerLeft.module.css';
 import Facebook from './SocialIcons/Facebook/facebook';
 import Twitter from './SocialIcons/twitter/twitter';
 import Instagram from './SocialIcons/instagram/instagram';
 
 const FooterLeft = () =>{
     return(
-<section className = {s.footerContacts}>
-        <b className = {s.footerContacts__title}>YourR&D</b>
-        <address className = {s.footerContacts__address}>
+<section className = {footerLeftModule.footerContacts}>
+        <b className = {footerLeftModule.footerContacts__title}>YourR&D</b>
+        <address className = {footerLeftModule.footerContacts__address}>
           <div>
-                    <a href="tel+377777777" className = {s.footerContacts__item}>+3777777777</a>
+                    <a href="tel+377777777" className = {footerLeftModule.footerContacts__item}>+3777777777</a>
           </div>
           <div>
-            <a href="mailto:sanya" className = {s.footerContacts__item}>E-mail</a>
+            <a href="mailto:sanya" className = {footerLeftModule.footerContacts__item}>E-mail</a>
           </div>
-          <div className = {s.socialIcons}>
+          <div className = {footerLeftModule.socialIcons}>
             <Facebook/>
             <Twitter/>
             <Instagram/>
