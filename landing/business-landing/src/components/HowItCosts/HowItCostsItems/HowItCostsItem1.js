@@ -11,7 +11,10 @@ const HowItCostsItem1 = () =>{
                 </div>
                <div> Star-It Premium</div> 
             </div>
-            <div></div>
+            <div className = {HowItCostsItemModule.checkWrapper}>
+                <div className = {HowItCostsItemModule.check}></div>
+            </div>
+            
         </section> 
     )
 };
