@@ -1,9 +1,10 @@
 .page{
-  background-image: 
-      url("./components/picture/bg-right.svg");
-      /* url("./picture/bg-left.svg"); */
-  background-position:top right;
-  background-repeat: no-repeat;
+  background: 
+      url("./components/picture/bg-right.svg") top right no-repeat,
+      url("./components/picture/bg-left.svg") bottom left no-repeat;
+  /* background-position:top right;
+  background-position:bottom left;
+  background-repeat: no-repeat; */
   
 }
 .wrapper {
