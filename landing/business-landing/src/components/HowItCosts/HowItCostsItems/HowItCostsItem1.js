@@ -1,4 +1,5 @@
 import React from 'react';
+import icon from '../HowItCostsItems/images/icon.png'
 import HowItCostsItemModule from './HowItCostsItem.module.css';
 // import picture from './HowItCostsItems/icon.png';
 

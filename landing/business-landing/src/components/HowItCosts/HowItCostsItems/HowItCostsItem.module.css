@@ -6,7 +6,6 @@
     max-width: 25%;
     height: 350px;
     max-height: 25%;
-    padding: 32px 16px 10px;
     margin: 3px 10px;
     text-align: center;
     box-shadow: 0 10px 28px 0 hsl(210deg 8% 54% / 20%);
@@ -34,6 +33,16 @@
         margin-bottom: 15px;
     }
 }
+/* .iconWrapper{
+    position: absolute;
+    border-radius:50%;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    color: crimson;
+    background: url(./images/free-icon-star-25182.svg) no-repeat;
+    background-color:chartreuse;
+} */
 .checkWrapper{
     margin: 0 auto;
     width: 32px;
