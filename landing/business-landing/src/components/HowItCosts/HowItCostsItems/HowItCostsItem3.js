@@ -3,7 +3,31 @@ import HowItCostsItemModule from './HowItCostsItem.module.css';
 
 const HowItCostsItem3 = () =>{
     return(
-        <div className={HowItCostsItemModule.HowItCosts__item}>Поставщик услуг или товара, улучшает свой сервис на основании ваших оценок</div> 
+        <section className={HowItCostsItemModule.HowItCosts__item}>
+            <div className = {HowItCostsItemModule.card__top}>
+                <div className = {HowItCostsItemModule.iconWrapper}>
+                </div>
+               <strong className = {HowItCostsItemModule.cardTitle}> 
+                    Star-It Basic
+                </strong> 
+                <div className = {HowItCostsItemModule.price}>$22.99/Year</div>
+            </div>
+            <label className={HowItCostsItemModule.check}>
+                    <input type="checkbox"  className={HowItCostsItemModule.check__input}/>
+                    <span className={HowItCostsItemModule.check__box}></span>
+                    <span>Advertisement of your products</span>
+            </label>
+            <label className={HowItCostsItemModule.check}>
+                    <input type="checkbox" checked className={HowItCostsItemModule.check__input}/>
+                    <span className={HowItCostsItemModule.check__box}></span>
+                    <span>Get a global analysis</span>
+            </label>
+            <label className={HowItCostsItemModule.check}>
+                    <input type="checkbox"  className={HowItCostsItemModule.check__input}/>
+                    <span className={HowItCostsItemModule.check__box}></span>
+                    <span>Get a local analysis</span>
+            </label>   
+        </section> 
     )
 };
 

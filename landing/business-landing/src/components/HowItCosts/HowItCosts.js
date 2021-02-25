@@ -6,7 +6,7 @@ import HowItCostsItem3 from './HowItCostsItems/HowItCostsItem3'
 const HowItCosts = () => {
     return (
     <div>
-        <div className={howItCostsModule.HowItCosts__header}>Сколько это стоит</div>
+        <div className={howItCostsModule.HowItCosts__header}>How much it costs</div>
       <div className={howItCostsModule.HowItCosts}>
         <HowItCostsItem1/>
         <HowItCostsItem2/>
