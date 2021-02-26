@@ -16,26 +16,25 @@
     word-wrap:break-word;
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 680px){
     .HowItCosts__item {
-        flex: 0 0 35%;
-        max-width: 35%;
+        flex: 0 0 45%;
+        max-width: 45%;
         height: 350px;
         max-height: 25%;
-        margin-bottom: 15px;
+        margin-bottom: 38px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 550px){
     .HowItCosts__item {
         flex: 0 0 80%;
         max-width: 80%;
         height: 350px;
         max-height: 25%;
-        margin-bottom: 15px;
+        margin-bottom: 38px;
     }
 }
  .iconWrapper{
-     
     display:flex;
     justify-content: center;
     align-items:center;
@@ -65,7 +64,7 @@
     color:rgb(7, 144, 99);
 }
 .basic{
-    color:rgb(222,228,236);
+    color: #344554;
 }     
 
 .checkWrapper{
