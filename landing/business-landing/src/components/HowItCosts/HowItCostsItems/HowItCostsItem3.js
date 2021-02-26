@@ -6,6 +6,7 @@ const HowItCostsItem3 = () =>{
         <section className={HowItCostsItemModule.HowItCosts__item}>
             <div className = {HowItCostsItemModule.card__top}>
                 <div className = {HowItCostsItemModule.iconWrapper}>
+                <span className = {`${HowItCostsItemModule.icon}  ${HowItCostsItemModule.basic}`}> </span>
                 </div>
                <strong className = {HowItCostsItemModule.cardTitle}> 
                     Star-It Basic
