@@ -1,24 +1,27 @@
 import React from 'react';
 import footerLeftModule from './footerLeft.module.css';
-import Facebook from './SocialIcons/Facebook/facebook';
-import Twitter from './SocialIcons/twitter/twitter';
-import Instagram from './SocialIcons/instagram/instagram';
+import SocialIcons from './SocialIcons/socialIcons'
+
 
 const FooterLeft = () =>{
     return(
 <section className = {footerLeftModule.footerContacts}>
-        <b className = {footerLeftModule.footerContacts__title}>YourR&D</b>
         <address className = {footerLeftModule.footerContacts__address}>
-          <div>
-                    <a href="tel+377777777" className = {footerLeftModule.footerContacts__item}>+3777777777</a>
+          <div className = {footerLeftModule.footerContacts__address_item}>
+            <h4>Call us</h4>
+            <a href="tel+377777777" className = {footerLeftModule.footerContacts__item}>
+              +3777777777
+            </a>
           </div>
-          <div>
-            <a href="mailto:sanya" className = {footerLeftModule.footerContacts__item}>E-mail</a>
+          <div div className = {footerLeftModule.footerContacts__address_item}>
+          <h4>Subscribe us</h4>
+          <SocialIcons/>
           </div>
-          <div className = {footerLeftModule.socialIcons}>
-            <Facebook/>
-            <Twitter/>
-            <Instagram/>
+          <div div className = {footerLeftModule.footerContacts__address_item}>
+            <h4>Email us</h4>
+            <a href="mailto:YourR&D" className = {footerLeftModule.footerContacts__item}>
+            YourR&D@gmail.com
+            </a>
           </div>
         </address>
       </section>
