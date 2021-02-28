@@ -1,5 +1,10 @@
 .footerRight{
     display:flex;
     flex: 0 0 35%;
-    max-width: 35%
+    max-width: 35%;
+    flex-direction:column; 
+}
+.socialIcons{
+    display: flex;
+    justify-content: space-around;
 }
