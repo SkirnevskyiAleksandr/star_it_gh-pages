@@ -6,11 +6,11 @@ import footerStoreButtonsModule from './footerStoreButtons.module.css'
 
 const FooterStoreButtons = () =>{
     return(
-        <div className = {footerStoreButtonsModule.buttons}>
+        <section className = {footerStoreButtonsModule.buttons}>
             <AppStore/>
             <GooglePlay/>
             <Browser/>
-        </div>
+        </section>
     )
 }
 
