@@ -1,5 +1,4 @@
 import React from 'react';
-import footerRightModule from './footerRight.module.css';
 import FooterStoreButtons from './footerStoreButtons';
 
 const FooterRight = () =>{
