@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './WhereItWork.module.css';
 import WhereItWorkItem from './WhereItWorkItem';
-import Ok_logo from './images/shopOk.png';
-import Wait_logo from './images/wait.png';
-import Atm_logo from './images/ATM.png';
-import People_logo from './images/people.png';
-import Buy_logo from './images/buy.png';
+import Ok_logo from './assets/shopOk.png';
+import Wait_logo from './assets/wait.png';
+import Atm_logo from './assets/ATM.png';
+import People_logo from './assets/people.png';
+import Buy_logo from './assets/buy.png';
 
 const content = [
     {

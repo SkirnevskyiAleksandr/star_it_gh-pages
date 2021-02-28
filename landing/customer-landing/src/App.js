@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import DonloadApplication from './components/DonloadApplication/DonloadApplication';
-import WhereItWork from './components/WhereItWork/WhereItWork';
+import DonloadApplication from './components/DonloadApplication';
+import WhereItWork from './components/WhereItWork';
 
 function App() {
   return (
