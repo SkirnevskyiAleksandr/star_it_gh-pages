@@ -1,20 +1,18 @@
 import React from 'react';
-import s from './App.module.css';
-import Download from './components/Download/download';
+import appModule from './App.module.css';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Footer from './components/Footer/footer';
 
 
 function App() {
   return (
-    <div className = {s.page}>
-      <section className ={s.wrapper}>
-        <Download/>
+    <div className = {appModule.page}>
+      <section className ={appModule.wrapper}>
         <HowItWorks/>
         <Footer/>
       </section>  
     </div>
-    
+     
   );
 }
 
