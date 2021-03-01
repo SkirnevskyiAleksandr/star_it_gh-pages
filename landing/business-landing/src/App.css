@@ -1,7 +1,6 @@
 .page{
   background-image: 
-      url("./components/picture/bg-right.svg");
-      /* url("./picture/bg-left.svg"); */
+      url("./components/picture/bg-right.svg"); 
   background-position:top right;
   background-repeat: no-repeat;
   
@@ -51,4 +50,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} 

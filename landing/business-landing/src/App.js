@@ -11,6 +11,7 @@ import like_logo from './components/images/like_logo.svg';
 import upg_logo from './components/images/upg_logo.svg';
 import shop_logo from './components/images/shop_logo.svg';
 import smile_logo from './components/images/smile_logo.svg';
+import appModule from './App.module.css';
 
 
 
@@ -46,8 +47,12 @@ function App() {
       <KnowMore />
       <HowThisWork item={howWork} />
       <KnowMore />
+      <div className = {appModule.page}>
+      <section className ={appModule.wrapper}>
       <HowItCosts/>
       <Footer/>
+      </section>
+      </div>
     </div>
     
   );
