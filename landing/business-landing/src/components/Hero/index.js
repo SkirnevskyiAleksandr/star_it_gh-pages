@@ -1,11 +1,12 @@
 import React from 'react';
-import Download from "../Download/Download";
+
+import Download from "../Download/";
 
 import hero from "./style/Hero.module.css";
 import description from "./style/Description.module.css";
 import circle from "./style/Circle.module.css";
 
-import img from "./img/foto.png";
+import img from "./img/marketing.png";
 
 const Hero = () => {
     return (

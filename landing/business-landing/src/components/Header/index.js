@@ -1,22 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import Nav from "../Nav/Nav";
-import Logo from "../Logo/Logo";
-import ButtonMenu from "../ButtonMenu/ButtonMenu";
+import React, {useState} from 'react';
+import Nav from "../Nav/";
+import Logo from "../Logo/";
+import ButtonMenu from "../ButtonMenu/";
+
+import useScreenWidth from "../../Hooks/useScreenWidth/useScreenWidth";
 
 import header from "./Header.module.css"
 
-import logo from "./img/logo.png";
 
-const useScreenWidth = () => {
-    const [width, setSize] = useState([window.innerWidth]);
-
-    useEffect(() => {
-        const handleResize = () => setSize([window.innerWidth]);
-
-        window.addEventListener('resize', handleResize);
-    }, []);
-    return width;
-};
 
 const Header = () => {
     const navItemData = [
@@ -51,15 +42,9 @@ const Header = () => {
         />;
 
     return (
-        <header className={`${header.container} row`}>
-            <div className={header.wrap}>
-                <Logo
-                    img={logo}
-                    text="StarIt"
-                    title="logotype"
-                    width="100"
-                    height="100"
-                />
+        <header className={header.container}>
+            <div className={`${header.wrap} row`}>
+                <Logo/>
                 {width < maxWidth ? btnMenu : null}
                 {width > maxWidth ? nav : isMenuOpen ? nav : null}
             </div>
