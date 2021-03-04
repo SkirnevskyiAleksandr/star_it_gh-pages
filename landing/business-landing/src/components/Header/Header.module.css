@@ -1,15 +1,16 @@
 .container{
-    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-text);
+    box-shadow: 2px 0 2px;
 }
 
 .wrap{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
-    margin-bottom: 25px;
 }
 
 
