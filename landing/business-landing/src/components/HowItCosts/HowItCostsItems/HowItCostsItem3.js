@@ -15,17 +15,17 @@ const HowItCostsItem3 = () =>{
             </div>
             <label className={HowItCostsItemModule.check}>
                     <input type="checkbox"  className={HowItCostsItemModule.check__input}/>
-                    <span className={HowItCostsItemModule.check__box}></span>
+                    <span className={HowItCostsItemModule.check__box}/>
                     <span>Advertisement of your products</span>
             </label>
             <label className={HowItCostsItemModule.check}>
                     <input type="checkbox" checked className={HowItCostsItemModule.check__input}/>
-                    <span className={HowItCostsItemModule.check__box}></span>
+                    <span className={HowItCostsItemModule.check__box}/>
                     <span>Get a global analysis</span>
             </label>
             <label className={HowItCostsItemModule.check}>
                     <input type="checkbox"  className={HowItCostsItemModule.check__input}/>
-                    <span className={HowItCostsItemModule.check__box}></span>
+                    <span className={HowItCostsItemModule.check__box}/>
                     <span>Get a local analysis</span>
             </label>   
         </section> 

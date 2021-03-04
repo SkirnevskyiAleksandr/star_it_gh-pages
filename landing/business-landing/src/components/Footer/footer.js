@@ -10,5 +10,5 @@ const Footer = () =>{
           <FooterRight/>
       </footer>
     )
-}
+};
 export default Footer;

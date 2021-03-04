@@ -10,7 +10,7 @@ const HowThisWork = ({item}) => {
         key={i}/>);
 
     return (
-        <section className={styles.containerHowThisWork}>
+        <section className={styles.containerHowThisWork} id="HowThisWork">
             <h2 className={styles.howThisWorkTitle}>
                 Как это работает
             </h2>

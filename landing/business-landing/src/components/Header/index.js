@@ -13,11 +13,11 @@ const Header = () => {
     const navItemData = [
         {
             text: "Как это работает",
-            link: "#",
+            link: "#HowThisWork",
         },
         {
             text: "Сколько это стоит",
-            link: "#",
+            link: "#How much it costs",
         }];
 
     const maxWidth = 768;

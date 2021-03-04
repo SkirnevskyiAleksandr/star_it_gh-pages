@@ -4,7 +4,7 @@ import picture from './instagram.svg';
 
 const Instagram = () => {
     return (
-        <a href="#" className={socialIconsmodule.socialLink}><img src={picture} className = {socialIconsmodule.socialPicture} /></a>
+        <a href="#" className={socialIconsmodule.socialLink}><img src={picture} className = {socialIconsmodule.socialPicture} alt="instagram"/></a>
     );
 };
 
