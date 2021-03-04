@@ -4,15 +4,28 @@ import imgLogo from "./img/logo.svg";
 
 import logo from "./Logo.module.css"
 
+import Scroll from "../../Hooks/Scroll/";
+
 const Logo = () => {
+    const scroll = Scroll();
+
     const logotype = {
         text: "StarIt",
         title: "logotype",
     };
 
+    const logoSize = () => {
+        if(scroll < 1){
+            return logo.img;
+        }
+        else{
+            return `${logo.img} ${logo.img_small}`;
+        }
+    };
+
     return (
         <div className={logo.container}>
-            <img className={logo.img} src={imgLogo} alt={logotype.title}/>
+            <img className={logoSize()} src={imgLogo} alt={logotype.title}/>
             <p className={logo.text}>{logotype.text}</p>
         </div>
     );

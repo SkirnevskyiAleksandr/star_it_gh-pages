@@ -3,11 +3,10 @@ import Nav from "../Nav/";
 import Logo from "../Logo/";
 import ButtonMenu from "../ButtonMenu/";
 
-import useScreenWidth from "../../Hooks/useScreenWidth/useScreenWidth";
+import PageWidth from "../../Hooks/PageWidth/";
+import Scroll from "../../Hooks/Scroll/";
 
-import header from "./Header.module.css"
-
-
+import header from "./Header.module.css";
 
 const Header = () => {
     const navItemData = [
@@ -21,7 +20,8 @@ const Header = () => {
         }];
 
     const maxWidth = 768;
-    const width = useScreenWidth();
+    const width = PageWidth();
+    const scroll = Scroll();
     let [isMenuOpen, setMenuStatus] = useState(false);
 
     const handleOpenMenu = (isMenuOpen) => {
@@ -41,8 +41,17 @@ const Header = () => {
             onClick={setMenuStatus}
         />;
 
+    const showHeader = () => {
+        if(scroll < 1){
+            return header.container;
+        }
+        else{
+            return `${header.container} ${header.container_small}`;
+        }
+    };
+
     return (
-        <header className={header.container}>
+        <header className= {showHeader()}>
             <div className={`${header.wrap} row`}>
                 <Logo/>
                 {width < maxWidth ? btnMenu : null}
