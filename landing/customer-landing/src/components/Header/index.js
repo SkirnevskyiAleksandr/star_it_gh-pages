@@ -1,22 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import Nav from "../Nav/Nav";
-import Logo from "../Logo/Logo";
-import ButtonMenu from "../ButtonMenu/ButtonMenu";
+import React, {useState} from 'react';
+import Nav from "../Nav/";
+import Logo from "../Logo/";
+import ButtonMenu from "../ButtonMenu/";
 
-import header from "./Header.module.css"
+import header from "./Header.module.css";
 
-import logo from "./img/logo.png";
-
-const useScreenWidth = () => {
-    const [width, setSize] = useState([window.innerWidth]);
-
-    useEffect(() => {
-        const handleResize = () => setSize([window.innerWidth]);
-
-        window.addEventListener('resize', handleResize);
-    }, []);
-    return width;
-};
+import PageWidth from "../../Hooks/PageWidth/";
+import Scroll from "../../Hooks/Scroll/";
 
 const Header = () => {
     const navItemData = [
@@ -30,7 +20,8 @@ const Header = () => {
         }];
 
     const maxWidth = 768;
-    const width = useScreenWidth();
+    const width = PageWidth();
+    const scroll = Scroll();
     let [isMenuOpen, setMenuStatus] = useState(false);
 
     const handleOpenMenu = (isMenuOpen) => {
@@ -50,16 +41,19 @@ const Header = () => {
             onClick={setMenuStatus}
         />;
 
+    const showHeader = () => {
+        if(scroll < 1){
+            return header.container;
+        }
+        else{
+            return `${header.container} ${header.container_small}`;
+        }
+    };
+
     return (
-        <header className={`${header.container} row`}>
-            <div className={header.wrap}>
-                <Logo
-                    img={logo}
-                    text="StarIt"
-                    title="logotype"
-                    width="100"
-                    height="100"
-                />
+        <header className={showHeader()}>
+            <div className={`${header.wrap} row`}>
+                <Logo/>
                 {width < maxWidth ? btnMenu : null}
                 {width > maxWidth ? nav : isMenuOpen ? nav : null}
             </div>
