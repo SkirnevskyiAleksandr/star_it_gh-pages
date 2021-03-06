@@ -1,20 +1,14 @@
 import React from 'react';
-import s from './App.module.css';
-import HowItWorks from './components/HowItWorks/HowItWorks';
-import Footer from './components/Footer/footer';
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+
+import Header from "./components/Header/";
+import Hero from "./components/Hero/";
 
 
 function App() {
   return (
     <div>
-      <section className ={s.wrapper}>
         <Header/>
         <Hero/>
-        <HowItWorks/>
-        <Footer/>
-      </section>  
     </div>
     
   );

@@ -2,6 +2,7 @@
     --color-text: #6c767f;
     --color-title: #344554;
     --secondary-color: rgb(18, 196, 139);
+    --color-other: #ECB732;
 }
 
 *, :after, :before {
