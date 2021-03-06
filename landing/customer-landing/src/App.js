@@ -15,6 +15,13 @@ function App() {
       <DonloadApplication />
       <WhereItWork />
       <DonloadApplication />
+
+        <div className = {appModule.page}>
+          <section className ={appModule.wrapper}>
+            <HowItWorks/>
+            <Footer/>
+          </section>
+        </div>
     </div>
   );
 }
