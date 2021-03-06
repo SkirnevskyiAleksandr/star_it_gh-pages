@@ -1,8 +1,9 @@
 import React from 'react';
-import  HowItWorksModule from './HowItWorks.module.css';
-import HowItWorksItem1 from './HowItWorksItems/HowItWorksItem1'
-import HowItWorksItem2 from './HowItWorksItems/HowItWorksItem2'
-import HowItWorksItem3 from './HowItWorksItems/HowItWorksItem3'
+import  HowItWorksModule from './HowItworks.module.css';
+import HowItWorksItem1 from './HowItWorksItems/HowItWorksItem1';
+import HowItWorksItem2 from './HowItWorksItems/HowItWorksItem2';
+import HowItWorksItem3 from './HowItWorksItems/HowItWorksItem3';
+
 const HowItWorks = () => {
     return (
     <div>

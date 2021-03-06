@@ -1,7 +1,7 @@
 .page{
-  background: 
-      url("./components/picture/bg-right.svg") top right no-repeat,
-      url("./components/picture/bg-left.svg") bottom left no-repeat;
+  /*background: */
+  /*    url("./components/picture/bg-right.svg") top right no-repeat,*/
+  /*    url("./components/picture/bg-left.svg") bottom left no-repeat;*/
 }
 .wrapper {
   max-width: 1800px;

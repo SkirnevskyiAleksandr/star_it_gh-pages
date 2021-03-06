@@ -1,4 +1,4 @@
-/* :root{
+:root{
   --color-text: #6c767f;
   --color-title: #344554;
   --secondary-color: rgb(18, 196, 139);
@@ -45,6 +45,6 @@ img{
   .row {
     max-width: 1140px;
   }
-} */
+}
 
 

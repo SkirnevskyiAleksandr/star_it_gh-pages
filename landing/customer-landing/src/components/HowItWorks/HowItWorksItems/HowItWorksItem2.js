@@ -8,7 +8,7 @@ const HowItWorksItem2 = () =>{
                <h3 className = {HowItWorksItemModule.cardTitle}> 
                     Evaluate the product
                 </h3> 
-            <img src = {evaluetePicture} className = {HowItWorksItemModule.picture}></img>
+            <img src = {evaluetePicture} className = {HowItWorksItemModule.picture} alt="img"/>
         </section> 
     )
 };

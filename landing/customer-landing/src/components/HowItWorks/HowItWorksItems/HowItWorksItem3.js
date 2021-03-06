@@ -8,7 +8,7 @@ const HowItWorksItem3 = () =>{
                 <h3 className = {HowItWorksItemModule.cardTitle}> 
                Service gets better
                 </h3> 
-            <img src = {servBetterPicture} className = {HowItWorksItemModule.picture}></img>
+            <img src = {servBetterPicture} className = {HowItWorksItemModule.picture} alt="img"/>
         </section> 
     )
 };
