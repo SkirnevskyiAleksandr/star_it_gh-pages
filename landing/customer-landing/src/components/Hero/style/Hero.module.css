@@ -18,6 +18,7 @@
 
 .item:first-child{
     width: 40%;
+    padding: 50px 0;
 }
 
 .item:last-child{
