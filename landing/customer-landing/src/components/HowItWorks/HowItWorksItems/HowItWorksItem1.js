@@ -8,7 +8,7 @@ const HowItWorksItem1 = () =>{
             <h3 className = {HowItWorksItemModule.cardTitle}> 
                Scan QR-code
             </h3>
-            <img src = {qrPicture} className = {HowItWorksItemModule.picture}></img>
+            <img src = {qrPicture} className = {HowItWorksItemModule.picture} alt="img"/>
             <div className = {HowItWorksItemModule.card__top}> 
             </div>
         </section> 

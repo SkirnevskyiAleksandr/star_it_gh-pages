@@ -13,11 +13,11 @@ const FooterLeft = () =>{
               +3777777777
             </a>
           </div>
-          <div div className = {footerLeftModule.footerContacts__address_item}>
+          <div className = {footerLeftModule.footerContacts__address_item}>
           <h4>Subscribe us</h4>
           <SocialIcons/>
           </div>
-          <div div className = {footerLeftModule.footerContacts__address_item}>
+          <div className = {footerLeftModule.footerContacts__address_item}>
             <h4>Email us</h4>
             <a href="mailto:YourR&D" className = {footerLeftModule.footerContacts__item}>
             YourR&D@gmail.com
@@ -26,6 +26,6 @@ const FooterLeft = () =>{
         </address>
       </section>
     )
-}
+};
 
 export default FooterLeft;
