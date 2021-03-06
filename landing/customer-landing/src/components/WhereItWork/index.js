@@ -28,7 +28,7 @@ const content = [
         title: 'Вы хотите узнать, стоит ли брать тот или иной товар',
         logo: Buy_logo
     }
-]
+];
 
 const WhereItWork = () => {
 
@@ -37,7 +37,7 @@ const WhereItWork = () => {
                 key={i} />
             ); 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id="WhereItWork">
             <h2 className={styles.title}>
                 Где это работает
             </h2>
@@ -49,6 +49,6 @@ const WhereItWork = () => {
  
         </section>
     );
-}
+};
 
 export default WhereItWork;

@@ -6,7 +6,7 @@ import HowItWorksItem3 from './HowItWorksItems/HowItWorksItem3';
 
 const HowItWorks = () => {
     return (
-    <div>
+    <div id="HowItworks">
         <h2 className={HowItWorksModule.HowItWorks__header}>How it works</h2>
       <div className={HowItWorksModule.HowItWorks}>
         <HowItWorksItem1/>
