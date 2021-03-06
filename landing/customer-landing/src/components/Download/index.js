@@ -1,7 +1,7 @@
 import React from 'react';
 import DownloadItem from "./DownloadItem";
 
-import download from "./Download.module.css";
+import download from "./download.module.css";
 
 import google from "./img/google.svg";
 import ios from "./img/ios.svg";

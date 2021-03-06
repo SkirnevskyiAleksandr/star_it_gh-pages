@@ -1,6 +1,6 @@
 import React from 'react';
 
-import download from "./Download.module.css";
+import download from "./download.module.css";
 
 const DownloadItem = (props) => {
     return (
