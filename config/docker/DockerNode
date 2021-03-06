@@ -1,0 +1,10 @@
+FROM node:10
+
+ARG service_path
+ARG port
+
+WORKDIR /usr/sites/starit_app/
+COPY ./$service_path/package*.json ./
+RUN npm install
+EXPOSE $port
+CMD ["npm", "start"]
