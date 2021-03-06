@@ -64,9 +64,11 @@
 
 @keyframes showMark {
     0%{
+        color: var(--color-other);
         transform: scale(0);
     }
     100%{
+        color: var(--secondary-color);
         transform: scale(1);
     }
 }

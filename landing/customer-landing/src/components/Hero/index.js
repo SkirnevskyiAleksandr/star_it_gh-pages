@@ -1,5 +1,5 @@
 import React from 'react';
-import Download from "../Download/Download";
+import Index from "../Download/";
 
 import hero from "./style/Hero.module.css";
 import description from "./style/Description.module.css";
@@ -22,7 +22,7 @@ const Hero = () => {
                         <span className={description.mark}>Оценивай!</span>
                         <span className={description.mark}>Влияй!</span>
                     </p>
-                    <Download/>
+                    <Index/>
                 </div>
             </div>
         </section>

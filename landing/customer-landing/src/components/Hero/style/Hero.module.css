@@ -41,6 +41,8 @@
 
 @media (min-width: 1200px){
     .item:last-child{
+
+        padding: 50px;
         padding-right: 100px;
     }
 }
