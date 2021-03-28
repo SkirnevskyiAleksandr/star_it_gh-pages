@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import logo from './asets/logo_silpo.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <section className = "data">
+      <div className = "data_wrapper">
+    <div className = ""> 
+      <div className = "data__item">
+          <span className = "data__item_name">Name: </span>
+          <span className = "item_info">Silpo Ltd</span>
+      </div>
+
+      <div className = "data__item address">
+        <span className = "data__item_address">Address: </span>
+        <span className = "item_info">Kiev, Str. Bulgakov, 11</span>
+      </div>
     </div>
+    <div className = "logo__wrapper"><img src = {logo} className = "logo" alt="img"/></div>
+    </div>
+    
+      <div className = "data__item ticket">tiket</div>
+      <div className = "data__item time">time</div>
+    </section>
+    <section className = "rating">
+    </section> 
+    <section className = "feedbeak">
+    </section>
+
+    </div>  
   );
 }
 
