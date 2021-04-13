@@ -1,0 +1,9 @@
+.App-clock{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:rgb(46, 44, 44);
+    font-size: 29px;
+    padding-bottom: 5px;
+    text-align: center;
+}
