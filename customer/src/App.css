@@ -1,8 +1,9 @@
+@import url("https://kit.fontawesome.com/f7118aec50.js");
 .App{
   background:linear-gradient(to left,#DAE6F5,#FEFEFF);
   margin: 20px auto;
   max-width:500px;
-  height: 600px;
+  height: 700px;
 }
 .header{
   height: 10%;
@@ -33,9 +34,10 @@
   justify-content: center;
   align-items:start;
   padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .data__item{
-  margin-left: 50px;
   padding-bottom: 5px;
   color:#8EB2E0;
 }
@@ -55,7 +57,6 @@
 .logo__wrapper{
   width:100px;
   height: 30px;
-  margin-right: 30px;
 }
 .logo{
     width: 100%;
@@ -73,26 +74,15 @@
   font-size: 29px;
 }
 
-.icon-clock{
-  position: relative;
-  top: 5px;
-  display:inline-flex;
-  width: 15px;
-  height: 15px;
-  justify-content: center;
-  align-items:center;
-  border: 1px solid #8EB2E0;
-  border-radius:50%;
-  overflow: hidden;
-  background:linear-gradient(to left,#9ABAE4,#FCFDFE);
-}
-.clock-letter{
+
+.clock-picture{
   position: relative;
   top: 3px;
   left: -4px;;
-  font-size: 14px;
-  color: #6F91C7;
-  transform: rotate(0.6turn);
+  width: 27px;
+  height: 27px;
+  border-radius:50%;
+  
 }
 .live-clock{
   display:inline-block;
@@ -101,7 +91,7 @@
   color:#8EB2E0;
 }
 .time-wrapper{
-  width:90%;
+  width:100%;
   display:flex;
   justify-content: space-between;
 }
@@ -116,7 +106,7 @@
   flex-direction: column;
 }
 .feedback{
-  height: 25%;
+  height: 50%;
 }
 .feedback__form{
   height: 100%;
@@ -148,11 +138,13 @@
   font-size: 12px;
 }
 .input__feedback{
-  width:20%;
+  width:90%;
   height: 30px;
+  text-align: center;
   border:none;
   background:none;
   padding: auto;
+  color:#8EB2E0;
   font-size: large;
   text-decoration-line: underline;
   text-decoration-color: #FFAF22;
@@ -178,5 +170,65 @@
 @media screen and (max-height:600px){
   .App{
     overflow-y: scroll;
+  }
+}
+
+/* rating */
+.rating-wrapper {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+.output {
+  font-size: 25px;
+  }
+.rating {
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 80px;
+}
+.rating input {
+  display: none;
+}
+.rating input:checked ~ label:before {
+  content: ' ★ ';
+}
+.rating label {
+  cursor: pointer;
+  color: #FFB125;
+}
+.rating label:before {
+  content: ' ☆ ';
+}
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #FFB125;
+}
+.rating label:hover:before,
+.rating label:hover ~ label:before {
+  content: ' ★ ';
+}
+
+
+/* media */
+@media screen and (max-width:450px) {
+  .App-clock{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .data{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width:375px) {
+  .data{
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }

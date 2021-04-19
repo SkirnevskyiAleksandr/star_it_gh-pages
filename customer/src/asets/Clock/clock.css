@@ -7,3 +7,14 @@
     padding-bottom: 5px;
     text-align: center;
 }
+@media screen and (max-width:450px) {
+    .App-clock{
+      font-size: 24px;
+    }
+  }
+
+@media screen and (max-width:450px) {
+    .App-clock{
+    font-size: 24px;
+    }
+  }

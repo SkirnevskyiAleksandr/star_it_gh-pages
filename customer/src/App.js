@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
 import logo from './asets/logo_silpo.png';
+import ATB from './asets/logo_atb.svg';
 import Clock from './asets/Clock/clock';
-import Rating from './asets/Rating/rating';
-import  './asets/Rating/rating.css';
+import icon from './asets/clock-icon.svg';
 
 function App() {
   return (
     <div className="App">
       {/* header */}
       <section className="header">
-
+     
       </section>
       <nav className="nav">
-        <a href="#" className="nav__items">statistics</a>
-        <a href="#" className="nav__items">info</a>
-        <a href="#" className="nav__items">profile</a>
+        <a href="#" className="nav__items">kishenya</a>
+        <a href="#" className="nav__items">atb</a>
+        <a href="#" className="nav__items">silpo</a>
       </nav>
       <section className="data">
         <div className="data_wrapper">
@@ -41,37 +41,53 @@ function App() {
 
         <div className="time-wrapper">
         <div className="data__item time">
-          <div className="icon-clock">
-            <span className="clock-letter">L</span>
-          </div>
+          
+          <img className = "clock-picture"  src = {icon}></img>
+          
           <span className="time-text"> Time</span>
         </div>
-        
           <Clock />
-        
         </div>
-        <hr className="line"/>
-
       </section>
-      <section className="rating-section">
-        <Rating/>
-        <hr className="line"/>
-      </section>
+      <hr className="line"/>
+      
       <section className="feedback">
-        <form className="feedback__form">
+        <form className="feedback__form"
+        method="POST"
+          action=" localhost:8181/api/fbo/business_id"
+          name="rating-form"
+        >
+          <div className="rating-wrapper">
+            <div className="output">Rating</div>
+            <div className="rating">
+                <input type="radio" id="star_5" name="star" value="5"/>
+                <label for="star_5"></label>
+                <input type="radio" id="star_4" name="star" value="4"/>
+                <label for="star_4"></label>
+                <input type="radio" id="star_3" name="star" value="3"/>
+                <label for="star_3"></label>
+                <input type="radio" id="star_2" name="star" value="2"/>
+                <label for="star_2"></label>
+                <input type="radio" id="star_1" name="star" value="1"/>
+                <label for="star_1"></label>
+		    </div>
+        <hr className="line"/>
+        </div>
+
+
+
           <div className="checkbox__wrapper">
           <label className="checkbox__label">
             <span className="checkbox__text"> I want to get answer</span>
-          <input type="checkbox" className="checkbox"/>
+          <input type="checkbox" className="checkbox" name="checkbox"/>
           </label>
           </div>
-          <input className="input__feedback" type="textarea" placeholder="feedback"/>
+          <input className="input__feedback" type="textarea" name="feedback" placeholder="feedback"/>
           <button className="button" type="submit">
             Send
           </button>
         </form>
       </section>
-
     </div>
   );
 }
